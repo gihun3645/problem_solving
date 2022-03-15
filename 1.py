@@ -1,7 +1,7 @@
-from msvcrt import kbhit
+print(r'|\_/|     ')
+print(r'|q p|   /}')
+print(r'( 0 )"""\ ')
+print(r'|"^"`    |')
+print(r'||_/=\\__|')
 
 
-for i in array:
-    for j in array:
-        temp = i * j
-        print(temp)
