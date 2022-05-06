@@ -1,9 +1,6 @@
-from tkinter import N
-
-
 n = int(input())
-num = n
-count = 0
+num = n  # num을 변하는 값으로 지정
+count = 0  # 사이클이 몇 번도는지
 
 while True:
     a = num//10
