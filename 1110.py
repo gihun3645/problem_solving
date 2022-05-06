@@ -1,16 +1,16 @@
-from os import cpu_count
+from tkinter import N
 
 
-num = int(input())
-check = num
-new_num = 0
-temp = 0
+n = int(input())
+num = n
 count = 0
+
 while True:
-    temp = num//10 + num % 10
-    new_num = (num % 10)*10 + temp % 10
+    a = num//10
+    b = num % 10
+    c = (a+b) % 10
+    num = (b*10) + c
     count += 1
-    num = new_num
-    if new_num == check:
+    if(num == n):
         break
 print(count)
