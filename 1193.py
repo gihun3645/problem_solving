@@ -13,4 +13,5 @@ if line % 2 == 0:  # 사선 라인이 짝수번째 일 때
 else:  # 사선 라인이 홀수번째 일 때
     top = gap + 1  # 분자
     under = line - gap  # 분모
+
 print(f'{top}/{under}')
