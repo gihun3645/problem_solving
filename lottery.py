@@ -7,5 +7,5 @@ print(random.choice(list))
 group = ['1', '2', '3', '4', '5', '6']
 print(random.sample(group, 3))
 
-# 로또 생성기
-print(random.sample(range(1, 46), 5))
+# 로또
+print(random.sample(range(1, 46), 6))
