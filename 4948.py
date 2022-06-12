@@ -1,22 +1,24 @@
-from math import sqrt
+num = []
+
+for i in range(2, 246913):
+    cnt = 0
+
+    for j in range(2, int(i**0.5)+1):
+        if i % j == 0:
+            cnt += 1
+            break
+
+    if cnt == 0:
+        num.append(i)
 
 while True:
     n = int(input())
+    res = 0
+
     if n == 0:
         break
 
-    cnt = 0
-
-    for i in range(n+1, 2*n+1):
-        if i == 1:
-            continue
-        elif i == 2:
-            cnt += 1
-            continue
-        else:
-            for j in range(2, int(sqrt(i)+1)):
-                if i % j == 0:
-                    break
-            else:
-                cnt += 1
-    print(cnt)
+    for i in num:
+        if n < i <= 2*n:
+            res += 1
+    print(res)
