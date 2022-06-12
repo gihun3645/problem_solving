@@ -1,3 +1,6 @@
+from calendar import c
+
+
 num = []
 
 for i in range(2, 246913):
@@ -13,12 +16,12 @@ for i in range(2, 246913):
 
 while True:
     n = int(input())
-    res = 0
+    cnt = 0
 
     if n == 0:
         break
 
     for i in num:
         if n < i <= 2*n:
-            res += 1
-    print(res)
+            cnt += 1
+    print(cnt)
