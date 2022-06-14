@@ -1,7 +1,4 @@
 # 소수 집합 만들기
-from random import randrange
-
-
 nums = {x for x in range(2, 10_001) if x == 2 or x % 2 == 1}
 # nums : 2와 홀수로 이루어진 집합
 for odd in range(3, 101, 2):
