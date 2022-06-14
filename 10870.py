@@ -18,4 +18,4 @@ def fibonacci(n):
 
 
 n = int(input())
-print(fibonacci)
+print(fibonacci(n))
