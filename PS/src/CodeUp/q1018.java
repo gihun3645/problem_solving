@@ -8,6 +8,6 @@ public class q1018 {
 
         Scanner scanner = new Scanner(System.in);
         String time[] = scanner.next().split(":");
-        System.out.println(time[0]+" : "+time[1]);
+        System.out.println(time[0]+":"+time[1]);
     }
 }
