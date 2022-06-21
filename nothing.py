@@ -1,6 +1,5 @@
-list1 = [1, 2, 3, 4, 5]
-list2 = [6, 7, 8, 9, 10]
-
-result = map(lambda a, b: a + b, list1, list2)
-
-print(list(result))
+n = int(input())
+for i in range(1, n+1):
+    for j in range(n+1-i):
+        print("*", end="")
+    print()
