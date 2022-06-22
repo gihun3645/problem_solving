@@ -2,13 +2,14 @@ package CodeUp;
 
 import java.util.Scanner;
 
-public class nothing {
+public class q1039 {
 
     public static void main(String[] args) {
+        long a,b;
 
         Scanner sc = new Scanner(System.in);
-        char a = sc.nextLine().charAt(0);
-        char ch = (char)(a+1);
-        System.out.println(ch);
+        a = sc.nextLong();
+        b = sc.nextLong();
+        System.out.println(a+b);
     }
 }

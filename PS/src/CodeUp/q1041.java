@@ -2,7 +2,7 @@ package CodeUp;
 
 import java.util.Scanner;
 
-public class nothing {
+public class q1041 {
 
     public static void main(String[] args) {
 
