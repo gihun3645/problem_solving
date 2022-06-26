@@ -8,25 +8,23 @@ public class q2231 {
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int result = 0;
+        int size = String.valueOf(n).length(); // n의 자리수 구하기
+        int start = n - (9 * size); // 시작 최솟값 구하기
+        int ans = 0;
 
-        for(int i = 0; i < n; i++) {
-            int number = i;
-            int sum = 0;	// 각 자릿수 합 변수
-
-            while(number != 0) {
-                sum += number % 10;	// 각 자릿수 더하기
-                number /= 10;
+        for(int i=start; i<n; i++) {
+            int sum = i;
+            int k = i;
+            while(k > 0) {
+                sum += k%10;
+                k /= 10;
             }
-
-            // i 값과 각 자릿수 누적합이 같을 경우 (생성자를 찾았을 경우)
-            if(sum + i == n) {
-                result = i;
+            if(sum == n) {
+                ans = i;
                 break;
             }
-
         }
-
-        System.out.println(result);
+        System.out.println(ans);
+        sc.close();
     }
 }
