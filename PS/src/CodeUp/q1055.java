@@ -2,7 +2,7 @@ package CodeUp;
 
 import java.util.*;
 
-public class q1054 {
+public class q1055 {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class q1054 {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        if ((a == 1) && (b == 1)) {
+        if ((a == 1) || (b == 1)) {
             System.out.println(1);
         } else {
             System.out.println(0);
