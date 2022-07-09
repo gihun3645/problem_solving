@@ -22,7 +22,7 @@ public class q5543 {
         for(int i=0; i<drink.length; i++) {
             if(drink[i]<drink_min) drink_min=drink[i];
         }
-
+        
         System.out.println(burger_min+drink_min-50);
     }
 }
